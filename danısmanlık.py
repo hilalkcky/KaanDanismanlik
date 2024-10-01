@@ -12,7 +12,7 @@ st.markdown("""
     }
 </style>
 """, unsafe_allow_html=True)
-</style>""", unsafe_allow_html=True)
+
 html_string = """
   .stApp > header {
       background-color: transparent;
