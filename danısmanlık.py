@@ -4,7 +4,12 @@ from streamlit_navigation_bar import st_navbar
 
 # Sayfa yapılandırmasını ayarlayın
 st.set_page_config(page_title="KAAN DANIŞMANLIK", initial_sidebar_state="collapsed")
-
+st.markdown("""
+<style>
+    * {
+       overflow-anchor: none !important;
+       }
+</style>""", unsafe_allow_html=True)
 html_string = """
   .stApp > header {
       background-color: transparent;
