@@ -104,20 +104,7 @@ elif page == "Hizmetlerimiz":
     )
     st.title("Hizmetlerimiz")
     st.subheader("""Kaan Danışmanlık olarak sunduğumuz hizmetler:""")
-    services = [
-        ("Çalışma İzni"),
-        ("Oturum İzni"),
-        ("Deport İşlemleri"),
-        ("Yabancı Hukuk İşlemleri"),
-        ("Evlilik İşlemleri"),
-        ("Öğrenci İşlemleri"),
-        ("Yabancı Sağlık Sigortası"),
-        ("Randevu İşlemleri"),
-    ]
-
-    for service, image in services:
-        st.markdown(f"<h3 style='font-size: 24px; font-weight: bold; color: white;'>{service}</h3>",
-                    unsafe_allow_html=True)
+   
        
 
 # İletişim sayfası
