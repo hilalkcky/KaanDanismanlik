@@ -59,6 +59,35 @@ page = st_navbar(
 )
 
 
+if page == "Ana Sayfa":
+    st.write("denem")
+    
+    st.write("#")
+    st.write("#")
+    st.write("#")
+    st.write("#")
+    st.write("#")
+    st.write("#")
+    st.write("#")
+    st.write("#")
+    st.write("#")
+    st.write("#")
+    st.write("#")
+    st.write("#")
+    st.write("#")
+    st.write("#")
+    st.write("#")
+    st.write("#")
+    st.write("#")
+    st.write("#")
+    st.write("#")
+    st.write("#")
+    st.write("#")
+    st.write("#")
+    st.write("#")
+    st.write("#")
+    st.write("#")
+    st.write("denem2")
 
 
 
