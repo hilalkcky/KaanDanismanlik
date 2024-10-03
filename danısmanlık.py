@@ -69,7 +69,7 @@ st.markdown(
     unsafe_allow_html=True
 )
 st.write("#")
-st.image("ilkresim.jpeg", width=700)
+
 
 if page == "Ana Sayfa":
     st.markdown(
@@ -96,14 +96,14 @@ if page == "Ana Sayfa":
     st.subheader("Müşteri Yorumları")
 
     # Yorum 1
-    st.image("peter.jpeg", width=500)  # Yorum sahibinin fotoğrafı
+    
     st.write("Phillip Mayer, 35")
     st.write("""
     "Kaan Danışmanlık ile göçmenlik süreci hakkında endişelenmenize gerek yok. Kendimi hoş ve emin ellerde hissettim."
     """)
 
     # Yorum 2
-    st.image("noni.jpeg", width=500)  # Yorum sahibinin fotoğrafı
+
     st.write("Noni Faraji, 25")
     st.write("""
     "Türkiye'ye tek başıma okumak için gelmek çok stresli olabilirdi. Neyse ki, Kaan Danışmanlık benim evden uzaktaki ailemdi ve her şeyi halletmeme yardım etti."
@@ -124,20 +124,20 @@ elif page == "Hizmetlerimiz":
     st.title("Hizmetlerimiz")
     st.subheader("""Kaan Danışmanlık olarak sunduğumuz hizmetler:""")
     services = [
-        ("Çalışma İzni", "WhatsApp Image 2024-10-01 at 13.56.24 (2).jpeg"),
-        ("Oturum İzni", "WhatsApp Image 2024-10-01 at 13.56.24 (3).jpeg"),
-        ("Deport İşlemleri", "deport.jpeg"),
-        ("Yabancı Hukuk İşlemleri", "WhatsApp Image 2024-10-01 at 13.56.24.jpeg"),
-        ("Evlilik İşlemleri", "WhatsApp Image 2024-10-01 at 13.56.24 (4).jpeg"),
-        ("Öğrenci İşlemleri", "ogrenci.jpeg"),
-        ("Yabancı Sağlık Sigortası", "WhatsApp Image 2024-10-01 at 13.56.24 (1).jpeg"),
-        ("Randevu İşlemleri", "son.jpeg"),
+        ("Çalışma İzni"),
+        ("Oturum İzni"),
+        ("Deport İşlemleri"),
+        ("Yabancı Hukuk İşlemleri"),
+        ("Evlilik İşlemleri"),
+        ("Öğrenci İşlemleri"),
+        ("Yabancı Sağlık Sigortası"),
+        ("Randevu İşlemleri"),
     ]
 
     for service, image in services:
         st.markdown(f"<h3 style='font-size: 24px; font-weight: bold; color: white;'>{service}</h3>",
                     unsafe_allow_html=True)
-        st.image(image, width=700)
+       
 
 # İletişim sayfası
 elif page == "İletişim":
@@ -169,30 +169,4 @@ elif page == "İletişim":
     st.subheader("Telefon: *0553 794 6771*")
 
     # Logo için alan
-    st.image("logo.jpeg", width=500)
 
-    latitude = 39.923952513749335
-    longitude = 32.85656321135337
-    view_state = pdk.ViewState(
-        latitude=latitude,
-        longitude=longitude,
-        zoom=11,  # Yakınlaştırma seviyesi
-        pitch=50  # Haritanın eğim açısı
-    )
-
-    layer = pdk.Layer(
-        'ScatterplotLayer',
-        data=[{'lat': latitude, 'lon': longitude}],
-        get_position='[lon, lat]',
-        get_radius=500,  # İşaretçinin büyüklüğü
-        get_color=[255, 0, 0],  # Kırmızı renk
-        pickable=True
-    )
-
-    deck = pdk.Deck(
-        layers=[layer],
-        initial_view_state=view_state,
-        map_style="mapbox://styles/mapbox/streets-v11"  # Google Haritalar benzeri bir stil
-    )
-
-    st.pydeck_chart(deck)
