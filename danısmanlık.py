@@ -2,7 +2,7 @@ import streamlit as st
 import pydeck as pdk
 from streamlit_navigation_bar import st_navbar
 
-# Sayfa yapılandırmasını ayarlayın
+
 st.set_page_config(page_title="KAAN DANIŞMANLIK", initial_sidebar_state="collapsed")
 st.markdown("""
 <style>
@@ -86,7 +86,7 @@ if page == "Ana Sayfa":
     # Başlık
     st.title("Kaan Danışmanlık")
 
-    # Hoş geldiniz mesajı
+  
     st.subheader("Merhabalar ülkemizin değerli misafirleri,")
     st.write("""
     Öncelikle hepinizi sevgi ile kucaklıyor, ülkenizden ayrılmanın verdiği hüznü sizlerle paylaşmak istiyoruz.
@@ -184,7 +184,7 @@ elif page == "İletişim":
         pitch=50  # Haritanın eğim açısı
     )
 
-    # Kırmızı işaretçi için ScatterplotLayer kullanıyoruz
+   
     layer = pdk.Layer(
         'ScatterplotLayer',
         data=[{'lat': latitude, 'lon': longitude}],
@@ -194,12 +194,12 @@ elif page == "İletişim":
         pickable=True
     )
 
-    # Renkli harita stili ekleyelim (Mapbox stilleri kullanılıyor)
+ 
     deck = pdk.Deck(
         layers=[layer],
         initial_view_state=view_state,
         map_style="mapbox://styles/mapbox/streets-v11"  # Google Haritalar benzeri bir stil
     )
 
-    # Harita bileşenini ekleyelim
+   
     st.pydeck_chart(deck)
