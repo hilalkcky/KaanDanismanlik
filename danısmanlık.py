@@ -54,14 +54,7 @@ page = st_navbar(
 
 st.write("#")
 # Ana Sayfa
-st.markdown(
-    """
-    <h2 style="background-color: #AEEEEE; font-weight: bold; padding: 10px; border-radius: 5px; color: black;">
-        TÜRKİYE'YE GELDİNİZ VE NE YAPACAĞINIZI BİLEMİYOR MUSUNUZ? YENİ HAYATINIZA KAAN DANIŞMANLIĞI ZİYARET EDEREK BAŞLAYABİLİRSİNİZ.
-    </h2>
-    """,
-    unsafe_allow_html=True
-)
+
 st.write("#")
 st.image("picture/ilkresim.jpeg", width=700)
 
