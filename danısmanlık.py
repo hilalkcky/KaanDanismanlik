@@ -35,7 +35,7 @@ html_string = """
 st.markdown(f'<style>{html_string}</style>', unsafe_allow_html=True)
 
 # Sayfa seçim
-page = st.radio("", ["Ana Sayfa", "Hizmetlerimiz", "İletişim"], index=0, key="menu_radio", format_func=lambda x: x, help="Sayfa seçin")
+page = st.radio("", ["Ana Sayfa", "Hizmetlerimiz", "İletişim"], horizontal=True)
 
 st.write("#")
 # Ana Sayfa
