@@ -183,7 +183,7 @@ elif page == "İletişim":
         'ScatterplotLayer',
         data=[{'lat': latitude, 'lon': longitude}],
         get_position='[lon, lat]',
-        get_radius=100,  # İşaretçinin büyüklüğü
+        get_radius=30,  # İşaretçinin büyüklüğü
         get_color=[255, 0, 0],  # Kırmızı renk
         pickable=True
     )
