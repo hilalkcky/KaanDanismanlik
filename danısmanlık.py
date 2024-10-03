@@ -53,7 +53,7 @@ page = st_navbar(
 )
 
 
-st.image("picture/ilkresim.jpeg", width=700)
+
 
 if page == "Ana Sayfa":
     st.markdown(
