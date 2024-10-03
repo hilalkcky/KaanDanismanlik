@@ -105,41 +105,41 @@ elif page == "Hizmetlerimiz":
     col1, col2 = st.columns(2)
     with col1:
         st.markdown("<h3 style='font-size: 24px; font-weight: bold; color: white;'>Çalışma İzni</h3>", unsafe_allow_html=True)
-        st.image("WhatsApp Image 2024-10-01 at 13.56.24 (2).jpeg", width=300)
+        st.image("WhatsApp Image 2024-10-01 at 13.56.24 (2).jpeg", width=300, use_column_width=True)
 
     with col2:
         st.markdown("<h3 style='font-size: 24px; font-weight: bold; color: white;'>Oturum İzni</h3>", unsafe_allow_html=True)
-        st.image("WhatsApp Image 2024-10-01 at 13.56.24 (3).jpeg", width=300)
+        st.image("WhatsApp Image 2024-10-01 at 13.56.24 (3).jpeg", width=300, use_column_width=True)
 
     # 2. Hizmet
     col1, col2 = st.columns(2)
     with col1:
         st.markdown("<h3 style='font-size: 24px; font-weight: bold; color: white;'>Deport İşlemleri</h3>", unsafe_allow_html=True)
-        st.image("deport.jpeg", width=300)
+        st.image("deport.jpeg", width=300, use_column_width=True)
 
     with col2:
         st.markdown("<h3 style='font-size: 24px; font-weight: bold; color: white;'>Yabancı Hukuk İşlemleri</h3>", unsafe_allow_html=True)
-        st.image("WhatsApp Image 2024-10-01 at 13.56.24.jpeg", width=300)
+        st.image("WhatsApp Image 2024-10-01 at 13.56.24.jpeg", width=300, use_column_width=True)
 
     # 3. Hizmet
     col1, col2 = st.columns(2)
     with col1:
         st.markdown("<h3 style='font-size: 24px; font-weight: bold; color: white;'>Evlilik İşlemleri</h3>", unsafe_allow_html=True)
-        st.image("WhatsApp Image 2024-10-01 at 13.56.24 (4).jpeg", width=300)
+        st.image("WhatsApp Image 2024-10-01 at 13.56.24 (4).jpeg", width=300, use_column_width=True)
 
     with col2:
         st.markdown("<h3 style='font-size: 24px; font-weight: bold; color: white;'>Öğrenci İşlemleri</h3>", unsafe_allow_html=True)
-        st.image("ogrenci.jpeg", width=300)
+        st.image("ogrenci.jpeg", width=300, use_column_width=True)
 
     # 4. Hizmet
     col1, col2 = st.columns(2)
     with col1:
         st.markdown("<h3 style='font-size: 24px; font-weight: bold; color: white;'>Yabancı Sağlık Sigortası</h3>", unsafe_allow_html=True)
-        st.image("WhatsApp Image 2024-10-01 at 13.56.24 (1).jpeg", width=300)
+        st.image("WhatsApp Image 2024-10-01 at 13.56.24 (1).jpeg", width=300, use_column_width=True)
 
     with col2:
         st.markdown("<h3 style='font-size: 24px; font-weight: bold; color: white;'>Randevu İşlemleri</h3>", unsafe_allow_html=True)
-        st.image("son.jpeg", width=300)
+        st.image("son.jpeg", width=300, use_column_width=True)
 # İletişim sayfası
 elif page == "İletişim":
     st.markdown(
