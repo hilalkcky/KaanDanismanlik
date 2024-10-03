@@ -14,18 +14,14 @@ st.markdown("""
 
 html_string = """
   .stApp > header {
-      background-color: transparent;
+     
   }
 
   .stApp {
-      margin: auto;
-      font-family: "Gill Sans Extrabold", sans-serif;
-      overflow: auto;
+    
 
       background: black;
-      animation: gradient 15s ease infinite;
-      background-size: 400% 400%;
-      background-attachment: fixed;
+
   }
   """
 styles = {
@@ -51,11 +47,11 @@ st.markdown(f'<style>{html_string}</style>', unsafe_allow_html=True)
 # Sidebar menüsü
 st.sidebar.title("Menü")
 pages = ["Ana Sayfa", "Hizmetlerimiz", "İletişim"]
-options = {"show_sidebar": False}
+
 page = st_navbar(
     pages,
     styles=styles,
-    options=options,
+
 )
 
 
