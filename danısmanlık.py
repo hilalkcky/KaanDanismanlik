@@ -52,10 +52,7 @@ page = st_navbar(
     options=options,
 )
 
-st.write("#")
-# Ana Sayfa
 
-st.write("#")
 st.image("picture/ilkresim.jpeg", width=700)
 
 if page == "Ana Sayfa":
