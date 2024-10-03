@@ -4,18 +4,14 @@ import pydeck as pdk
 st.set_page_config(page_title="KAAN DANIŞMANLIK", initial_sidebar_state="collapsed")
 st.markdown("""
 <style>
-    .css-1kyxreq {  
-        max-width: 600px;  
-        margin: auto;  
+    .css-1kyxreq {  # Bu sınıfı uygulamanıza göre özelleştirin
+        max-width: 600px;  /* Örnek genişlik ayarı */
+        margin: auto;  /* Merkeze yerleştirme */
     }
     .radio-container {
         display: flex;
         justify-content: center;  /* Ortalamak için */
         margin-top: 20px;  /* Üstten boşluk */
-    }
-    .radio-label {
-        margin: 0 15px;  /* Her bir butonun yanındaki boşluk */
-        color: white;  /* Yazı rengi beyaz */
     }
 </style>
 """, unsafe_allow_html=True)
