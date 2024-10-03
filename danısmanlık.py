@@ -135,8 +135,8 @@ elif page == "İletişim":
 
     # Adres
     st.subheader("Adres")
-    st.subheader(
-        "[Cumhuriyet Mahallesi Tuna Caddesi No: 11/18 Çanakçı İşhanı Çankaya/Ankara](https://www.google.com/maps/dir/39.9723778,32.9550342/KAAN+DANI%C5%9EMANLIK/@39.9466001,32.8146048,12z/data=!3m1!4b1!4m9!4m8!1m1!4e1!1m5!1m1!1s0x14d34fbb7b6583f7:0x65cb5c60fdf9a6f2!2m2!1d32.8565239!2d39.9237632?entry=ttu&g_ep=EgoyMDI0MDkzMC4wIKXMDSoASAFQAw%3D%3D)")
+     st.subheader(
+        "[Cumhuriyet Mahallesi Tuna Caddesi No: 11/18 Çanakçı İşhanı Çankaya/Ankara](https://www.google.com/search?q=KAAN+DANI%C5%9EMANLIK&rlz=1C1CHZN_trTR1017TR1017&oq=kaan+dan%C4%B1%C5%9Fmanl%C4%B1k&gs_lcrp=EgZjaHJvbWUqDggAEEUYJxg7GIAEGIoFMg4IABBFGCcYOxiABBiKBTIICAEQRRgnGDsyBggCEEUYQDIICAMQABgWGB4yCggEEAAYgAQYogQyCggFEAAYgAQYogQyBggGEEUYPDIGCAcQRRg80gEJNDEzMmowajE1qAIIsAIB&sourceid=chrome&ie=UTF-8)")
     st.write("#")
     st.write("Diğer şubemiz:")
     st.write(
