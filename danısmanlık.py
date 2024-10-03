@@ -113,10 +113,19 @@ elif page == "Hizmetlerimiz":
         ("Randevu İşlemleri", "son.jpeg"),
     ]
 
-    for service, image in services:
-        st.markdown(f"<h3 style='font-size: 24px; font-weight: bold; color: white;'>{service}</h3>",
-                    unsafe_allow_html=True)
-        st.image(image, width=700)
+    
+    for i, (service, image) in enumerate(services):
+        cols = st.columns(2)  # İki sütun oluştur
+        if i % 2 == 0:  # Eğer indeks çiftse, yazıyı solda göster
+            with cols[0]:
+                st.markdown(f"<h3 style='font-size: 24px; font-weight: bold; color: white;'>{service}</h3>", unsafe_allow_html=True)
+            with cols[1]:
+                st.image(image, width=400)  # Resmi sağda göster
+        else:  # Eğer indeks tekse, resmi solda göster
+            with cols[0]:
+                st.image(image, width=400)  # Resmi solda göster
+            with cols[1]:
+                st.markdown(f"<h3 style='font-size: 24px; font-weight: bold; color: white;'>{service}</h3>", unsafe_allow_html=True)
 
 # İletişim sayfası
 elif page == "İletişim":
