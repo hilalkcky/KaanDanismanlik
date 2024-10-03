@@ -13,13 +13,7 @@ st.markdown("""
 """, unsafe_allow_html=True)
 
 html_string = """
-  .stApp > header {
-     
-  }
-
   .stApp {
-    
-
       background: black;
 
   }
@@ -38,102 +32,20 @@ styles = {
         "overflow": "auto"
     },
 
-    "hover": {
-        "background-color": " #AEEEEE",
-    },
 }
 st.markdown(f'<style>{html_string}</style>', unsafe_allow_html=True)
 
-# Sidebar menüsü
-st.sidebar.title("Menü")
-pages = ["Ana Sayfa", "Hizmetlerimiz", "İletişim"]
-
-page = st_navbar(
-    pages,
-    styles=styles,
-
-)
 
 
-if page == "Ana Sayfa":
-    st.write("denem")
+st.write("denem")
     
-    st.write("#")
-    st.write("#")
-    st.write("#")
-    st.write("#")
-    st.write("#")
-    st.write("#")
-    st.write("#")
-    st.write("#")
-    st.write("#")
-    st.write("#")
-    st.write("#")
-    st.write("#")
-    st.write("#")
-    st.write("#")
-    st.write("#")
-    st.write("#")
-    st.write("#")
-    st.write("#")
-    st.write("#")
-    st.write("#")
-    st.write("#")
-    st.write("#")
-    st.write("#")
-    st.write("#")
-    st.write("#")
-    st.write("denem2")
+st.write("#")
+st.write("#")
+st.write("#")
+st.write("#")
+st.write("#")
 
-elif page == "Hizmetlerimiz":
-    
-    st.write("denem")
-    
-    st.write("#")
-    st.write("#")
-    st.write("#")
-    st.write("#")
-    st.write("#")
-    st.write("#")
-    st.write("#")
-    st.write("#")
-    st.write("#")
-    st.write("#")
-    st.write("#")
-    st.write("#")
-    st.write("#")
-    st.write("#")
-    st.write("#")
-    st.write("#")
-    st.write("#")
-    st.write("#")
-    st.write("#")
-    st.write("#")
-    st.write("#")
-    st.write("#")
-    st.write("#")
-    st.write("#")
-    st.write("#")
-    st.write("denem2")
-elif page == "İletişim":
-    st.write("#")
-    st.write("#")
-    st.write("#")
-    st.write("#")
-    st.write("#")
-    st.write("#")
-    st.write("#")
-    st.write("#")
-    st.write("#")
-    st.write("#")
-    st.write("#")
-    st.write("#")
-    st.write("#")
-    st.write("#")
-    st.write("#")
-    st.write("#")
-    st.write("#")
-    st.write("#")
-    st.write("#")
-    st.write("#")
-    st.write("denem2")
+st.write("#")
+st.write("#")
+st.write("denem2")
+
