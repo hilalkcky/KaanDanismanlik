@@ -45,11 +45,11 @@ st.markdown(f'<style>{html_string}</style>', unsafe_allow_html=True)
 # Sidebar menüsü
 st.sidebar.title("Menü")
 pages = ["Ana Sayfa", "Hizmetlerimiz", "İletişim"]
-
+options = {"show_sidebar": False}
 page = st_navbar(
     pages,
     styles=styles,
-
+    options=options,
 )
 
 st.write("#")
