@@ -49,7 +49,7 @@ st.markdown(
     unsafe_allow_html=True
 )
 st.write("#")
-st.image("picture/ilkresim.jpeg", width=700)
+st.image("ilkresim.jpeg", width=700)
 
 if page == "Ana Sayfa":
     st.markdown(
@@ -76,14 +76,14 @@ if page == "Ana Sayfa":
     st.subheader("Müşteri Yorumları")
 
     # Yorum 1
-    st.image("picture/peter.jpeg", width=500)  # Yorum sahibinin fotoğrafı
+    st.image("peter.jpeg", width=500)  # Yorum sahibinin fotoğrafı
     st.write("Phillip Mayer, 35")
     st.write("""
     "Kaan Danışmanlık ile göçmenlik süreci hakkında endişelenmenize gerek yok. Kendimi hoş ve emin ellerde hissettim."
     """)
 
     # Yorum 2
-    st.image("picture/noni.jpeg", width=500)  # Yorum sahibinin fotoğrafı
+    st.image("noni.jpeg", width=500)  # Yorum sahibinin fotoğrafı
     st.write("Noni Faraji, 25")
     st.write("""
     "Türkiye'ye tek başıma okumak için gelmek çok stresli olabilirdi. Neyse ki, Kaan Danışmanlık benim evden uzaktaki ailemdi ve her şeyi halletmeme yardım etti."
@@ -104,14 +104,14 @@ elif page == "Hizmetlerimiz":
     st.title("Hizmetlerimiz")
     st.subheader("""Kaan Danışmanlık olarak sunduğumuz hizmetler:""")
     services = [
-        ("Çalışma İzni", "picture/WhatsApp Image 2024-10-01 at 13.56.24 (2).jpeg"),
-        ("Oturum İzni", "picture/WhatsApp Image 2024-10-01 at 13.56.24 (3).jpeg"),
-        ("Deport İşlemleri", "picture/deport.jpeg"),
-        ("Yabancı Hukuk İşlemleri", "picture/WhatsApp Image 2024-10-01 at 13.56.24.jpeg"),
-        ("Evlilik İşlemleri", "picture/WhatsApp Image 2024-10-01 at 13.56.24 (4).jpeg"),
-        ("Öğrenci İşlemleri", "picture/ogrenci.jpeg"),
-        ("Yabancı Sağlık Sigortası", "picture/WhatsApp Image 2024-10-01 at 13.56.24 (1).jpeg"),
-        ("Randevu İşlemleri", "picture/son.jpeg"),
+        ("Çalışma İzni", "WhatsApp Image 2024-10-01 at 13.56.24 (2).jpeg"),
+        ("Oturum İzni", "WhatsApp Image 2024-10-01 at 13.56.24 (3).jpeg"),
+        ("Deport İşlemleri", "deport.jpeg"),
+        ("Yabancı Hukuk İşlemleri", "WhatsApp Image 2024-10-01 at 13.56.24.jpeg"),
+        ("Evlilik İşlemleri", "WhatsApp Image 2024-10-01 at 13.56.24 (4).jpeg"),
+        ("Öğrenci İşlemleri", "ogrenci.jpeg"),
+        ("Yabancı Sağlık Sigortası", "WhatsApp Image 2024-10-01 at 13.56.24 (1).jpeg"),
+        ("Randevu İşlemleri", "son.jpeg"),
     ]
 
     for service, image in services:
@@ -147,7 +147,7 @@ elif page == "İletişim":
     st.subheader("Telefon: *0553 794 6771*")
 
     # Logo için alan
-    st.image("picture/logo.jpeg", width=500)
+    st.image("logo.jpeg", width=500)
 
     latitude = 39.923952513749335
     longitude = 32.85656321135337
