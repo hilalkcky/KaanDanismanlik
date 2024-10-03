@@ -24,7 +24,6 @@ html_string = """
       overflow: auto;
 
       background: black;
-      animation: gradient 15s ease infinite;
       background-size: 400% 400%;
       background-attachment: fixed;
   }
