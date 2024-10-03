@@ -91,7 +91,7 @@ if page == "Ana Sayfa":
 
 elif page == "Hizmetlerimiz":
     
-  st.write("denem")
+    st.write("denem")
     
     st.write("#")
     st.write("#")
