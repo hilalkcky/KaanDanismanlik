@@ -61,7 +61,6 @@ if page == "Ana Sayfa":
         """,
         unsafe_allow_html=True
     )
-    # Başlık
     st.title("Kaan Danışmanlık")
 
     st.subheader("Merhabalar ülkemizin değerli misafirleri,")
